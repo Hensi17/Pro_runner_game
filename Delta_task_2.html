@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>PRO - RUNNER</h1>
+    </br>
+    <meta charset="utf-8" />
+    <title>Canvas tutorial</title>
+
+    <style type="text/css">
+        canvas {
+            padding: 1em;
+            border: 1em solid transparent;
+            background: linear-gradient(rgb(76, 127, 236), white, rgb(62, 158, 62)) padding-box, repeating-linear-gradient(-45deg, #f69ec4 0, #f69ec4 12.5%, transparent 0, transparent 25%, #7eb4e2 0, #7eb4e2 37.5%, transparent 0, transparent 50%) 0 / 5em 5em;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            float: center;
+            /* For browsers that do not support gradients */
+        }
+        
+        head {
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom right, rgb(115, 228, 243), rgb(245, 114, 205));
+        }
+        
+        body {
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to bottom right, rgb(115, 228, 243), rgb(195, 245, 114));
+        }
+        
+        button {
+            background-color: #c03491;
+            color: white;
+            padding: 15px 32px;
+            font-size: 16px;
+            text-align: center;
+            float: center;
+        }
+        
+        .grid-container-4 {
+            display: grid;
+            grid-template-columns: auto;
+            height: 80px;
+            width: 100px;
+            background-color: #8be0b5;
+            padding: 5px;
+            text-align: center;
+            font-family: serif;
+            font-size: xx-large;
+            border: 15px solid rgba(252, 167, 213, 1);
+        }
+        
+        h1 {
+            font-family: 'Lucida Sans';
+            color: rgb(9, 11, 122);
+            font-size: xx-large;
+            letter-spacing: 1.5px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        h3 {
+            font-family: 'Lucida Sans';
+            color: rgb(43, 8, 243);
+            font-size: 155%;
+            letter-spacing: 1px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="800" height="600" onclick="jump ('x');"></canvas>
+    <h3>Points</h3>
+
+    <div class="grid-container-4">
+
+        <div class="score" id="sc">0</div>
+
+    </div>
+    </br>
+    <button id="start_game" onclick="move();">Start</button>
+
+</body>
+
+<script src="delta_task_js_2.js"></script>
+
+</html>
